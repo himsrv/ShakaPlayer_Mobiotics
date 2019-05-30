@@ -1,0 +1,41 @@
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.top-img:hover .overlay{
+  opacity: 1;
+
+}
+
+.time {
+  position: relative;
+  bottom: 20px;
+  left:225px;
+  padding: 2px 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.7);
+  text-align:center;
+  }
+
+  .overlay i
+  {
+    color:#fff;
+    top: 42%;
+    transform: translate(-50%,0);
+    position: absolute;
+    font-size:50px;
+   }
+

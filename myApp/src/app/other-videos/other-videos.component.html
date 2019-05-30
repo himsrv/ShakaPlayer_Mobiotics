@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row" style="padding: 5px 5px 50px 5px">
+        <i class="fa fa-film" style="font-size: 40px;padding-left: 12px;color: red"></i>
+        <span style="font-size: 30px;padding-left: 10px">Others</span>
+    </div>
+  <div class="row">
+
+<!-- Clickable thumbnails of images -->
+
+    <div *ngFor="let tile of tiles">
+    <div class="col-md-3">
+      <div class="top-img">
+          <img src={{tile.src}}/>
+          <span class="time">{{tile.time}}</span>
+
+          <div class="overlay" (click)="playVideo(tile.link)">
+              <i class="fa fa-play" ></i>
+            </div>
+      </div>
+
+      <!-- Title and Description -->
+
+      <p><strong>{{tile.title}}</strong></p>
+      <p>{{tile.description}}</p>
+
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<hr>
+

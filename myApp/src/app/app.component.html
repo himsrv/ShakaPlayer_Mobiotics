@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+
+<app-tech-videos></app-tech-videos>
+
+<app-other-videos></app-other-videos>
+<app-footer></app-footer>
+
+<button id="openModalButton" [hidden]="true" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal displaying Video -->
+<div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button  type="button" (click)="closeModal()" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+      <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
