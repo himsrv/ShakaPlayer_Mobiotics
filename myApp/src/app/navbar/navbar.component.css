@@ -1,13 +1,5 @@
 .navbar {
-  width: 100;
+  width: 100%;
   background-color: rgba(36, 29, 29, 0.904);
 
 }
-
-nav > li {
-  display: inline-block;
-}
-
- #logo {
-   color: darkcyan
- }
